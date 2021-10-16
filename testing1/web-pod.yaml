@@ -5,6 +5,7 @@ metadata:
   labels:
     run: www
   name: www
+  namespace: default
 spec:
   containers:
   - image: nginx
