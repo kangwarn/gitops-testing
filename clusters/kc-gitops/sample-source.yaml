@@ -9,6 +9,7 @@ spec:
   ref:
     branch: master
   url: git@github.com:kangwarn/gitops-testing.git
-  secretRef: kc-gitops-secret
+  secretRef: 
+    name: kc-gitops-secret
 
 
