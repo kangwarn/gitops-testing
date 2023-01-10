@@ -1,0 +1,14 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta2
+kind: GitRepository
+metadata:
+  name: sample
+  namespace: default
+spec:
+  interval: 30s
+  ref:
+    branch: master
+  url: git@github.com:kangwarn/gitops-testing.git
+  secretRef: kc-gitops-secret
+
+
