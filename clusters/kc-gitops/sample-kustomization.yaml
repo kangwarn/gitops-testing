@@ -22,5 +22,5 @@ spec:
           - name: ubuntu
             image: harbor-repo.vmware.com/dockerhub-proxy-cache/library/ubuntu:latest
       target:
-        name: sample1
+        name: sample
         kind: Pod
