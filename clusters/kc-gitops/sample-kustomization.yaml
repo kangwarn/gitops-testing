@@ -11,3 +11,14 @@ spec:
     kind: GitRepository
     name: sample
   validation: client
+  patches:
+    - patch: |-
+        apiVersion: v1
+        kind: Pod
+        spec:
+          containers:
+          - name: ubuntu
+            image: harbor-repo.vmware.com/dockerhub-proxy-cache/library/ubuntu:latest
+      target:
+        name: sample1
+        kind: Pod
