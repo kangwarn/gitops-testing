@@ -5,6 +5,7 @@ metadata:
   name: sample
   namespace: default
 spec:
+  gitImplementation: go-git
   interval: 30s
   ref:
     branch: master
